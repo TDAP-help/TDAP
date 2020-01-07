@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>TDAP Help &mdash; TDAP Help stable documentation</title>
+  <title>Introduction &mdash; TDAP Help stable documentation</title>
   
 
   
@@ -36,7 +36,8 @@
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Introduction" href="Introduction.html" /> 
+    <link rel="next" title="Contributors" href="Contributors.html" />
+    <link rel="prev" title="TDAP Help" href="index.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -50,7 +51,7 @@
           
 
           
-            <a href="#" class="icon icon-home"> TDAP Help
+            <a href="index.html" class="icon icon-home"> TDAP Help
           
 
           
@@ -80,8 +81,11 @@
               
             
             
-              <ul>
-<li class="toctree-l1"><a class="reference internal" href="Introduction.html">Introduction</a></li>
+              <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Introduction</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#time-dependent-dft">Time-Dependent DFT</a></li>
+</ul>
+</li>
 </ul>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="Contributors.html">Contributors</a></li>
@@ -99,7 +103,7 @@
       <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="#">TDAP Help</a>
+          <a href="index.html">TDAP Help</a>
         
       </nav>
 
@@ -128,15 +132,15 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="#">Docs</a> &raquo;</li>
+      <li><a href="index.html">Docs</a> &raquo;</li>
         
-      <li>TDAP Help</li>
+      <li>Introduction</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/Introduction.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -149,51 +153,17 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="toctree-wrapper compound">
-</div>
-<div class="section" id="tdap-help">
-<h1><a class="reference external" href="http://tdap.iphy.ac.cn/">TDAP</a> Help<a class="headerlink" href="#tdap-help" title="Permalink to this headline">¶</a></h1>
-</div>
-<div class="section" id="introduction">
+  <div class="section" id="introduction">
 <h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="Introduction.html">Introduction</a></li>
-</ul>
+<div class="section" id="time-dependent-dft">
+<h2>Time-Dependent DFT<a class="headerlink" href="#time-dependent-dft" title="Permalink to this headline">¶</a></h2>
+<p>The Time-Dependent Ab-initio Package, or in its acronym ‘<a class="reference external" href="http://tdap.iphy.ac.cn/">TDAP</a>’, is aimed at carrying out real-time ( rt ) time-dependent density functional theory (TDDFT) calculations in efficient  atomic bases. Such calculations allow first principles treatment of both electron and ion dynamics with non-adiabatic effects  fully taken in account, by solving many-electron time-dependent Schr”odinger equation. It enables large-scale  first principles simulations of quantum dynamics in finite and extended systems including atoms, clusters, molecules, nanoparticles, solids, defects, interfaces, and two-dimensional materials, significantly  reducing the heavy computational cost of typical rt-TDDFT simulations.</p>
+<p>Be aware that since the time-dependent Schr”odinger equation is a one-order partial differential  equation, it is a initial value problem instead of an eigenvalue problem with specific boundary conditions. Thus, the solution method is to solve a time-evolving equation <span class="math notranslate nohighlight">\(\psi(t+dt)=\exp(-idtH)\psi(t)\)</span>, instead of diagonalizing <span class="math notranslate nohighlight">\(H\)</span> with <span class="math notranslate nohighlight">\(H\psi=E\psi\)</span> . Some important features of the current <a class="reference external" href="http://tdap.iphy.ac.cn/">TDAP</a> code include:
+Both finite and extended systems can be simulated.
+Both electronic and ionic degree of freedoms are evolved, therefore a complete information on electronic wavefunctions and ionic movements during real time evolution can be provided for simulations of complex materials and rich phenomena far from equilibrium.
+Momentum-resolved real-time evolution of electrons can be simulated, which yields the important momentum resolution and a new degree of freedom, essential to describe key quantities and important physics in photoexcited molecules and condensed matter materials. It also significantly  improves the computational efficiency of rt-TDDFT calculations for solids.
+Different from approaches using real space grids and all-electron full-potential linearized augmented-planewaves, the adoption of local atomic basis reduces the number of required basis functions, making rt-TDDFT computation of realistic large systems plausible. In addition, the bases can be defined by users. With a relatively small real-space cutoff for atomic bases, the order-<span class="math notranslate nohighlight">\(N\)</span> linear scaling with respect to the system size can be achieved.</p>
 </div>
-</div>
-<div class="section" id="compilation">
-<h1>Compilation<a class="headerlink" href="#compilation" title="Permalink to this headline">¶</a></h1>
-<div class="toctree-wrapper compound">
-</div>
-</div>
-<div class="section" id="input-file-description">
-<h1>Input File Description<a class="headerlink" href="#input-file-description" title="Permalink to this headline">¶</a></h1>
-<div class="toctree-wrapper compound">
-</div>
-</div>
-<div class="section" id="example">
-<h1>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h1>
-<div class="toctree-wrapper compound">
-</div>
-</div>
-<div class="section" id="contributors">
-<h1>Contributors<a class="headerlink" href="#contributors" title="Permalink to this headline">¶</a></h1>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="Contributors.html">Contributors</a></li>
-</ul>
-</div>
-</div>
-<div class="section" id="indices-and-tables">
-<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
-<div class="toctree-wrapper compound">
-</div>
-<ul class="simple">
-<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
-<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
-<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
-</ul>
 </div>
 
 
@@ -204,8 +174,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="Introduction.html" class="btn btn-neutral float-right" title="Introduction" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="Contributors.html" class="btn btn-neutral float-right" title="Contributors" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
+      
+        <a href="index.html" class="btn btn-neutral float-left" title="TDAP Help" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
