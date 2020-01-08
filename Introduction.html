@@ -36,7 +36,7 @@
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Contributors" href="Contributors.html" />
+    <link rel="next" title="Compilation" href="Compilation.html" />
     <link rel="prev" title="TDAP Help" href="index.html" /> 
 </head>
 
@@ -86,6 +86,12 @@
 <li class="toctree-l2"><a class="reference internal" href="#time-dependent-dft">Time-Dependent DFT</a></li>
 </ul>
 </li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Compilation.html">Compilation</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="TimeEvolution.html">Input File Description</a></li>
 </ul>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="Contributors.html">Contributors</a></li>
@@ -158,11 +164,13 @@
 <div class="section" id="time-dependent-dft">
 <h2>Time-Dependent DFT<a class="headerlink" href="#time-dependent-dft" title="Permalink to this headline">¶</a></h2>
 <p>The Time-Dependent Ab-initio Package, or in its acronym ‘<a class="reference external" href="http://tdap.iphy.ac.cn/">TDAP</a>’, is aimed at carrying out real-time ( rt ) time-dependent density functional theory (TDDFT) calculations in efficient  atomic bases. Such calculations allow first principles treatment of both electron and ion dynamics with non-adiabatic effects  fully taken in account, by solving many-electron time-dependent Schr”odinger equation. It enables large-scale  first principles simulations of quantum dynamics in finite and extended systems including atoms, clusters, molecules, nanoparticles, solids, defects, interfaces, and two-dimensional materials, significantly  reducing the heavy computational cost of typical rt-TDDFT simulations.</p>
-<p>Be aware that since the time-dependent Schr”odinger equation is a one-order partial differential  equation, it is a initial value problem instead of an eigenvalue problem with specific boundary conditions. Thus, the solution method is to solve a time-evolving equation <span class="math notranslate nohighlight">\(\psi(t+dt)=\exp(-idtH)\psi(t)\)</span>, instead of diagonalizing <span class="math notranslate nohighlight">\(H\)</span> with <span class="math notranslate nohighlight">\(H\psi=E\psi\)</span> . Some important features of the current <a class="reference external" href="http://tdap.iphy.ac.cn/">TDAP</a> code include:
-Both finite and extended systems can be simulated.
-Both electronic and ionic degree of freedoms are evolved, therefore a complete information on electronic wavefunctions and ionic movements during real time evolution can be provided for simulations of complex materials and rich phenomena far from equilibrium.
-Momentum-resolved real-time evolution of electrons can be simulated, which yields the important momentum resolution and a new degree of freedom, essential to describe key quantities and important physics in photoexcited molecules and condensed matter materials. It also significantly  improves the computational efficiency of rt-TDDFT calculations for solids.
-Different from approaches using real space grids and all-electron full-potential linearized augmented-planewaves, the adoption of local atomic basis reduces the number of required basis functions, making rt-TDDFT computation of realistic large systems plausible. In addition, the bases can be defined by users. With a relatively small real-space cutoff for atomic bases, the order-<span class="math notranslate nohighlight">\(N\)</span> linear scaling with respect to the system size can be achieved.</p>
+<p>Be aware that since the time-dependent Schr”odinger equation is a one-order partial differential  equation, it is a initial value problem instead of an eigenvalue problem with specific boundary conditions. Thus, the solution method is to solve a time-evolving equation <span class="math notranslate nohighlight">\(\psi(t+dt)=\exp(-idtH)\psi(t)\)</span>, instead of diagonalizing <span class="math notranslate nohighlight">\(H\)</span> with <span class="math notranslate nohighlight">\(H\psi=E\psi\)</span> . Some important features of the current <a class="reference external" href="http://tdap.iphy.ac.cn/">TDAP</a> code include:</p>
+<ul class="simple">
+<li><p>Both finite and extended systems can be simulated.</p></li>
+<li><p>Both electronic and ionic degree of freedoms are evolved, therefore a complete information on electronic wavefunctions and ionic movements during real time evolution can be provided for simulations of complex materials and rich phenomena far from equilibrium.</p></li>
+<li><p>Momentum-resolved real-time evolution of electrons can be simulated, which yields the important momentum resolution and a new degree of freedom, essential to describe key quantities and important physics in photoexcited molecules and condensed matter materials. It also significantly  improves the computational efficiency of rt-TDDFT calculations for solids.</p></li>
+<li><p>Different from approaches using real space grids and all-electron full-potential linearized augmented-planewaves, the adoption of local atomic basis reduces the number of required basis functions, making rt-TDDFT computation of realistic large systems plausible. In addition, the bases can be defined by users. With a relatively small real-space cutoff for atomic bases, the order-<span class="math notranslate nohighlight">\(N\)</span> linear scaling with respect to the system size can be achieved.</p></li>
+</ul>
 </div>
 </div>
 
@@ -174,7 +182,7 @@ Different from approaches using real space grids and all-electron full-potential
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="Contributors.html" class="btn btn-neutral float-right" title="Contributors" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="Compilation.html" class="btn btn-neutral float-right" title="Compilation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="index.html" class="btn btn-neutral float-left" title="TDAP Help" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
@@ -186,7 +194,7 @@ Different from approaches using real space grids and all-electron full-potential
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2020, Daqiang Chen
+        &copy; Copyright 2008-2020, TDAP
 
     </p>
   </div>

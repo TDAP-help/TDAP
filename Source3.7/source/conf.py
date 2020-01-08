@@ -18,8 +18,8 @@ import sphinx_rtd_theme
 # -- Project information -----------------------------------------------------
 
 project = 'TDAP Help'
-copyright = '2020, Daqiang Chen'
-author = 'Daqiang Chen'
+copyright = '2008-2020, TDAP'
+author = 'TDAP team'
 
 # The full version, including alpha/beta/rc tags
 release = 'stable'
@@ -30,6 +30,7 @@ source_parsers = {
         '.md': 'recommonmark.parser.CommonMarkParser',
         }
 source_suffix = ['.rst', '.md']
+pygments_style = 'sphinx' # high light
 #--
 
 

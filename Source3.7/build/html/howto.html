@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Search &mdash; TDAP Help stable documentation</title>
+  <title>rst插入代码 &mdash; TDAP Help stable documentation</title>
   
 
   
@@ -26,7 +26,6 @@
         <script type="text/javascript" src="_static/doctools.js"></script>
         <script type="text/javascript" src="_static/language_data.js"></script>
         <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-        <script type="text/javascript" src="_static/searchtools.js"></script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
@@ -36,7 +35,7 @@
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="#" /> 
+    <link rel="search" title="Search" href="search.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -63,7 +62,7 @@
 
           
 <div role="search">
-  <form id="rtd-search-form" class="wy-form" action="#" method="get">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
@@ -136,12 +135,14 @@
     
       <li><a href="index.html">Docs</a> &raquo;</li>
         
-      <li>Search</li>
+      <li>rst插入代码</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
+            <a href="_sources/howto.md.txt" rel="nofollow"> View page source</a>
+          
         
       </li>
     
@@ -153,19 +154,30 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <noscript>
-  <div id="fallback" class="admonition warning">
-    <p class="last">
-      Please activate JavaScript to enable the search
-      functionality.
-    </p>
-  </div>
-  </noscript>
+  <div class="section" id="rst">
+<h1>rst插入代码<a class="headerlink" href="#rst" title="Permalink to this headline">¶</a></h1>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>To show example code, use the reStructured Text code-block directive:
+前面也要有一个空行
+.. code-block:: language
+这里有一行空格，是留给写codeblock的控制参数的，不能写代码
+   code 这里的每一行，后面有空格也会warning
+By specifying the language, you enable pygments, which show syntax color coding for that code sample. (Ensure that your project conf.py file contains pygments_style = &#39;sphinx&#39;).
 
-  
-  <div id="search-results">
-  
-  </div>
+
+.. note::
+(此处必有空格或table)    Always use **evolve**  to do the TDDFT calculation, otherwise all the parameters listed below will not be read.
+
+
+Band projection 
+=======================================后面不能跟空格或其他字符
+:math:`重音符两侧也不要有多余的空格`
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>编译结果奇怪时，make clean一下再make
+</pre></div>
+</div>
+</div>
+
 
            </div>
            
@@ -203,14 +215,7 @@
   
   
     
-  
-  <script type="text/javascript">
-    jQuery(function() { Search.loadIndex("searchindex.js"); });
-  </script>
-  
-  <script type="text/javascript" id="searchindexloader"></script>
    
-
 
 </body>
 </html>
