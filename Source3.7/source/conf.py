@@ -31,6 +31,10 @@ source_parsers = {
         }
 source_suffix = ['.rst', '.md']
 pygments_style = 'sphinx' # high light
+#pdf support
+#extensions = ['rst2pdf.pdfbuilder']
+#pdf_documents = [('index', u'rst2pdf', u'Sample rst2pdf doc', u'Your Name'),]
+pdf_documents = [('index', u'rst2pdf', u'Sample rst2pdf doc', u'TDAP'),]
 #--
 
 
@@ -42,6 +46,7 @@ pygments_style = 'sphinx' # high light
 extensions = [
 "sphinx_rtd_theme",
 "sphinx.ext.mathjax",  #latex formule
+"rst2pdf.pdfbuilder",  #pdf
         ]
 
 # Add any paths that contain templates here, relative to this directory.

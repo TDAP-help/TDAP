@@ -188,7 +188,7 @@ Whether to output the partial DM of centain band and orbital projection.
 :samp:`Default value: false`
 
 TD.PartialDMBand ( *data block* )
-""""""""""""""""""""""""""""""""""""""""""""""""""""s
+""""""""""""""""""""""""""""""""""""""""""""""""""""
 Specify the band to output and orbital projection. See also **TD.PartialDMSumOrbitals**.
 
 Multiple lines with each of them include one band index. The corresponding charge density will be projected to the selected orbital blocks, and output to file: chg*Band Index*.txt

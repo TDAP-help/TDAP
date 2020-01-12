@@ -118,6 +118,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#analysis">Analysis</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#band-projection">Band projection</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#td-writedmofselectiveorbitals-logical">TD.WriteDMOfSelectiveOrbitals ( <em>Logical</em> )</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#td-partialdmband-data-block">TD.PartialDMBand ( <em>data block</em> )</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#td-partialdmsumorbitals-data-block">TD.PartialDMSumOrbitals ( <em>data block</em> )</a></li>
 </ul>
 </li>
@@ -340,9 +341,10 @@ Therefore,</p>
 <h4>TD.WriteDMOfSelectiveOrbitals ( <em>Logical</em> )<a class="headerlink" href="#td-writedmofselectiveorbitals-logical" title="Permalink to this headline">¶</a></h4>
 <p>Whether to output the partial DM of centain band and orbital projection.</p>
 <p><code class="samp docutils literal notranslate"><span class="pre">Default</span> <span class="pre">value:</span> <span class="pre">false</span></code></p>
-<p>TD.PartialDMBand ( <em>data block</em> )
-“”””””””””””””””””””””””””””””””””””””””””””””””””””s
-Specify the band to output and orbital projection. See also <strong>TD.PartialDMSumOrbitals</strong>.</p>
+</div>
+<div class="section" id="td-partialdmband-data-block">
+<h4>TD.PartialDMBand ( <em>data block</em> )<a class="headerlink" href="#td-partialdmband-data-block" title="Permalink to this headline">¶</a></h4>
+<p>Specify the band to output and orbital projection. See also <strong>TD.PartialDMSumOrbitals</strong>.</p>
 <p>Multiple lines with each of them include one band index. The corresponding charge density will be projected to the selected orbital blocks, and output to file: chg*Band Index*.txt</p>
 <p>For instance:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>%block TD.PartialDMBand
